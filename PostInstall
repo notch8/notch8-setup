@@ -1,0 +1,11 @@
+Add line to config/environments/development.rb
+
+```
+config.middleware.insert_before Rack::Lock, Rack::LiveReload
+```
+
+Run guard config
+
+```bash
+guard init
+```
