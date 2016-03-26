@@ -7,5 +7,5 @@ config.middleware.insert_before Rack::Lock, Rack::LiveReload
 Run guard config
 
 ```bash
-guard init
+cp GUARD_PATH/Guardfile Guardfile
 ```

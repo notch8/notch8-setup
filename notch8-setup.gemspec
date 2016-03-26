@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.post_install_message = File.read(File.expand_path('../PostInstall', __FILE__))
+  spec.post_install_message = File.read(File.expand_path('../PostInstall', __FILE__)).gsub('GUARD_PATH', lib)
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
